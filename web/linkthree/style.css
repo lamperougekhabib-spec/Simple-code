@@ -130,7 +130,9 @@ html, body {
 }
 
 .submenu a:hover {
-    background: #d6b98c;
+   background: #d6b98c;
+   transform: translateY(-2px);
+   box-shadow: 0 4px 12px rgba(0,0,0,0.2);
 }
 
 
