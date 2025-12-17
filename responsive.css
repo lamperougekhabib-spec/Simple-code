@@ -1,0 +1,129 @@
+@media screen and (max-width : 1200px) {
+    #hero p {
+        font-size: .9rem;
+    }
+
+    #hero h1 {
+        font-size: 2.3rem;
+    
+    }
+}
+
+@media screen and (min-width: 992px) {
+    .skill-konten {
+        gap: 0;
+    }
+}
+@media screen and (max-width: 768px) {
+    #hero {
+        padding-top: 120px; 
+        display: block;
+    }
+
+    #hero img {
+        width: 70%;
+        margin-bottom: 30px;
+    }
+
+    .social-icon {
+        position: static !important; 
+        transform: none !important;
+        margin-top: 30px;
+        text-align: center;
+    }
+
+    .social-icon a {
+        display: inline-block;
+        margin: 10px;
+    }
+
+    .cv {
+        display: block;
+        margin-top: 15px;
+    }
+
+    .btn-custom1 {
+        width: auto;
+        display: inline-block;
+        padding: 12px 40px;
+    }
+
+    #sertifikat img {
+        width: 100%;
+        height: auto;
+    }
+
+    .portofolio-card .card {
+        width: 100%;
+        max-width: 350px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    #hero {
+        padding-top: 120px; 
+        display: block;
+    }
+
+    #hero img {
+        width: 70%;
+        margin-bottom: 30px;
+    }
+
+    .social-icon {
+        position: static !important; 
+        transform: none !important;
+        margin-top: 30px;
+        text-align: center;
+    }
+
+    .social-icon a {
+        display: inline-block;
+        margin: 10px;
+    }
+
+    .cv {
+        display: block;
+        margin-top: 15px;
+    }
+
+    .btn-custom1 {
+        width: auto;
+        display: inline-block;
+        padding: 12px 40px;
+    }
+
+    #sertifikat img {
+        width: 100%;
+        height: auto;
+    }
+
+    .portofolio-card .card {
+        width: 100%;
+        max-width: 350px;
+    }
+}
+
+@media screen and (max-width : 576px) {
+    hr {
+        width: 75%;
+    }
+
+    h1 {
+        font-size: 2rem !important;
+    }
+
+    footer img {
+        width:75px;
+    }
+
+    footer p {
+        font-size: 0.8rem;
+    }
+}
+
+@media screen and (max-width : 350px) {
+    #portofolio .col-md-12 {
+        flex-direction: column;
+    }
+}
