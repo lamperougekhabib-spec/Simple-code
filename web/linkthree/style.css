@@ -1,0 +1,157 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+html, body {
+    min-height: 100%;
+    background-image: url("Background.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.container {
+    max-width: 500px;
+    margin: auto;
+    padding: 0 12px 40px;
+}
+
+
+.porto-bg {
+    width: 100%;
+    background-image: url("Background Porto.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center top;
+    padding-top: clamp(100px, 10vw + 40px, 180px); 
+    padding-bottom: 30px;
+    text-align: center;
+    background-color: rgba(255, 255, 255, 0.85);
+    border-radius: 12px;
+}
+
+
+.profile {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    background-image: url("Profile.jpeg");
+    background-size: cover;
+    background-position: center;
+    margin: -30px auto 15px;
+}
+
+
+@media (min-width: 1024px) {
+    .porto-bg {
+        padding-top: clamp(60px, 10vw + 20px, 100px); 
+    }
+
+    .profile {
+        margin: -50px auto 20px; 
+    }
+}
+
+
+
+.Nama {
+    font-family: Arial, sans-serif;
+    font-size: clamp(20px, 4vw, 24px);
+    margin-bottom: 4px;
+}
+
+.Latar_Belakang {
+    font-family: Arial, sans-serif;
+    font-size: clamp(14px, 3.5vw, 16px);
+    margin-bottom: 20px;
+}
+
+
+.menu-btn {
+    width: 90%;
+    max-width: 300px; 
+    height: 44px;
+    margin: 6px auto;
+    border-radius: 8px;
+    background: linear-gradient(135deg, #d6b98c, #b58b5a);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Bebas Neue', cursive;
+    font-size: 18px;
+    letter-spacing: 1px;
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+    transition: all 0.3s ease; 
+}
+
+.menu-btn:hover {
+    background: #d6b98c;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+}
+
+
+.menu-wrapper input {
+    display: none;
+}
+
+.submenu {
+    width: 80%;
+    max-width: 250px;
+    margin: 6px auto;
+    display: none;
+    opacity: 0;
+    transition: opacity 0.3s ease, max-height 0.4s ease;
+    max-height: 0;
+    overflow: hidden;
+}
+
+.menu-wrapper input:checked + .menu-btn + .submenu {
+    display: block;
+    opacity: 1;
+    max-height: 500px;
+}
+
+.submenu a {
+    display: block;
+    margin: 5px 0;
+    padding: 8px;
+    background: #e6d3b1;
+    border-radius: 6px;
+    font-family: 'Bebas Neue', cursive;
+    text-decoration: none;
+    color: black;
+    transition: background 0.3s ease;
+}
+
+.submenu a:hover {
+    background: #d6b98c;
+}
+
+
+@media (max-width: 480px) {
+    .profile {
+        width: 85px;
+        height: 85px;
+        margin: -15px auto 15px; 
+    }
+
+    .porto-bg {
+        padding-top: clamp(60px, 15vw, 120px); 
+    }
+
+    .menu-btn {
+        font-size: 16px;
+        height: 40px;
+    }
+
+    .submenu {
+        width: 90%;
+        max-width: 220px;
+    }
+}
