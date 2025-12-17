@@ -4,7 +4,6 @@
     box-sizing: border-box;
 }
 
-
 html, body {
     min-height: 100%;
     background-image: url("img/Background.jpg");
@@ -19,20 +18,18 @@ html, body {
     padding: 0 12px 40px;
 }
 
-
 .porto-bg {
     width: 100%;
     background-image: url("img/Background Porto.jpg");
-    background-size: cover;
+    background-size: cover; 
     background-repeat: no-repeat;
     background-position: center top;
-    padding-top: clamp(100px, 10vw + 40px, 180px); 
+    padding-top: clamp(100px, 10vw + 40px, 180px);
     padding-bottom: 30px;
     text-align: center;
-    background-color: rgba(255, 255, 255, 0.85);
+    background-color: rgba(255, 255, 255, 0);
     border-radius: 12px;
 }
-
 
 .profile {
     width: 100px;
@@ -41,20 +38,19 @@ html, body {
     background-image: url("img/Profile.jpeg");
     background-size: cover;
     background-position: center;
-    margin: -30px auto 15px;
+    margin: -30px auto 15px; 
 }
 
 
 @media (min-width: 1024px) {
     .porto-bg {
-        padding-top: clamp(60px, 10vw + 20px, 100px); 
+        padding-top: clamp(60px, 10vw + 20px, 100px);
     }
 
     .profile {
-        margin: -50px auto 20px; 
+        margin: -50px auto 20px;
     }
 }
-
 
 
 .Nama {
@@ -69,14 +65,18 @@ html, body {
     margin-bottom: 20px;
 }
 
+.menu-btn, .submenu a { 
+    position: relative;
+    z-index: 1; 
+}
 
 .menu-btn {
     width: 90%;
-    max-width: 300px; 
+    max-width: 300px;
     height: 44px;
     margin: 6px auto;
     border-radius: 8px;
-    background: linear-gradient(135deg, #d6b98c, #b58b5a);
+    background: #e6d3b1;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -86,11 +86,12 @@ html, body {
     color: black;
     text-decoration: none;
     cursor: pointer;
-    transition: all 0.3s ease; 
+    transition: background 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
+    overflow: hidden;
 }
 
 .menu-btn:hover {
-    background: #d6b98c;
+    background: #d6b98c; 
     transform: translateY(-2px);
     box-shadow: 0 4px 12px rgba(0,0,0,0.2);
 }
@@ -114,7 +115,7 @@ html, body {
 .menu-wrapper input:checked + .menu-btn + .submenu {
     display: block;
     opacity: 1;
-    max-height: 500px;
+    max-height: 500px; 
 }
 
 .submenu a {
@@ -126,13 +127,13 @@ html, body {
     font-family: 'Bebas Neue', cursive;
     text-decoration: none;
     color: black;
-    transition: background 0.3s ease;
+    transition: background 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 .submenu a:hover {
-   background: #d6b98c;
-   transform: translateY(-2px);
-   box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+    background: #d6b98c;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(0,0,0,0.2);
 }
 
 
@@ -157,3 +158,4 @@ html, body {
         max-width: 220px;
     }
 }
+
