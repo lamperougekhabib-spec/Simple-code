@@ -59,51 +59,6 @@
     }
 }
 
-@media screen and (max-width: 768px) {
-    #hero {
-        padding-top: 120px; 
-        display: block;
-    }
-
-    #hero img {
-        width: 70%;
-        margin-bottom: 30px;
-    }
-
-    .social-icon {
-        position: static !important; 
-        transform: none !important;
-        margin-top: 30px;
-        text-align: center;
-    }
-
-    .social-icon a {
-        display: inline-block;
-        margin: 10px;
-    }
-
-    .cv {
-        display: block;
-        margin-top: 15px;
-    }
-
-    .btn-custom1 {
-        width: auto;
-        display: inline-block;
-        padding: 12px 40px;
-    }
-
-    #sertifikat img {
-        width: 100%;
-        height: auto;
-    }
-
-    .portofolio-card .card {
-        width: 100%;
-        max-width: 350px;
-    }
-}
-
 @media screen and (max-width : 576px) {
     hr {
         width: 75%;
