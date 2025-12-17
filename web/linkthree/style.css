@@ -7,7 +7,7 @@
 
 html, body {
     min-height: 100%;
-    background-image: url("Background.jpg");
+    background-image: url("img/Background.jpg");
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
@@ -22,7 +22,7 @@ html, body {
 
 .porto-bg {
     width: 100%;
-    background-image: url("Background Porto.jpg");
+    background-image: url("img/Background Porto.jpg");
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center top;
@@ -38,7 +38,7 @@ html, body {
     width: 100px;
     height: 100px;
     border-radius: 50%;
-    background-image: url("Profile.jpeg");
+    background-image: url("img/Profile.jpeg");
     background-size: cover;
     background-position: center;
     margin: -30px auto 15px;
