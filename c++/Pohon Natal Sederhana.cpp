@@ -25,7 +25,7 @@ int main () {
                 cout<<"\033[31mo\033[0m";
             }
             else {
-                cout<<"\033[32m*\033[0m";
+                cout<<"\033[32m^\033[0m";
             }
         }
         cout<<endl;
